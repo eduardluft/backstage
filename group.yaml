@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: example/artist-relations-team
+  description: The place to be, for great artists
+  labels:
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: artistweb
+    circleci.com/project-slug: github/example-org/artist-website
+  tags:
+    - java
+    - go
+    - php
+  links:
+    - url: https://admin.example-org.com
+      title: Admin Dashboard
+      icon: catalog
+      type: admin-dashboard
+spec:
+  type: team
+  profile:
+    displayName: Infrastructure
+    email: infrastructure@example.com
+    picture: https://cdn.pixabay.com/photo/2017/09/03/15/17/monkey-2710658_1280.jpg
+  parent: ops
+  children: [backstage, other]
+  members: [jdoe]
