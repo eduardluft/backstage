@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: artist-web
   description: The place to be, for great artists
-  namespace: example
+  #namespace: example
   title: Artist Web
   labels:
     example.com/custom: custom_label_value
